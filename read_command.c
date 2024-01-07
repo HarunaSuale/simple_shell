@@ -13,12 +13,12 @@ void read_command(char *command, size_t len)
 	{
 		if(feof(stdin))
 		{
-			print_me('\n');
+			print_me("\n");
 			exit(EXIT_FAILURE);
 		}
 		else
 		{
-			print_me("sorry the file reading failed");
+			print_me("sorry the file reading failed: ");
 			exit(EXIT_FAILURE);
 		}
 

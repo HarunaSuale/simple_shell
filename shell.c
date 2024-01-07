@@ -9,11 +9,11 @@
 
 int main()
 {
-	char *command[120];
+	char command[120];
 
 	while (true)
 	{
-		prompt_display();
+		display_prompt();
 		read_command(command, sizeof(command));
 		exe_command(command);
 	}

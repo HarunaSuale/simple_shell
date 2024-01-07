@@ -7,7 +7,7 @@
  */
 
 
-char print_me(const char *str)
+void print_me(char *str)
 {
-	write(STDOUT_FILENO, str, strlen(str));
+	write(1, str, strlen(str));
 }
